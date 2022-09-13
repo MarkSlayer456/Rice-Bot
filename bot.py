@@ -190,7 +190,7 @@ except KeyboardInterrupt as error:
 		sock.sendall(read)
 		sock.close()
 		print("Grains sent to server:", grains)
-	except Error as e:
+	except Exception as e:
 		print("WARNING: Data is not being sent to the server... is it up?")
 		print(e)
 	
